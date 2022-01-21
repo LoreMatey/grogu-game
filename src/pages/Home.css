@@ -1,0 +1,8 @@
+.homepage-wrapper {
+  height: 100vh;
+  /* min-width: 400px; */
+  display: flex;
+  background-image: url('https://i.blogs.es/4c9232/cartel-mandalorian-the/1366_2000.jpeg');
+  background-color: rgb(16, 14, 21);
+  background-size: cover;
+}

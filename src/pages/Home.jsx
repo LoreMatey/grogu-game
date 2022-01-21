@@ -1,8 +1,12 @@
+import React from 'react';
+import './Home.css'
 
 const Home = () => {
-  <h1>
-    Home
-  </h1>
+  return (
+    <div className='homepage-wrapper'>
+    </div>
+    
+  )
 }
 
 export default Home;
