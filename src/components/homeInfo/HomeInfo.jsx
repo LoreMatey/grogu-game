@@ -1,7 +1,7 @@
 import './HomeInfo.css';
 const HomeData = () => {
   return (
-    <div className="homepage-info--wrapper">
+    <div className='homepage-info--wrapper'>
       <h1>¡Cuidado con Grogu!</h1>
         <p>
           El cazarrecompensas mandaloriano Din Djarin, conocido como «el Mandaloriano» o simplemente «mando», está a cargo de Grogu mientras viaja por la galaxia realizando todo tipo de encargos. 

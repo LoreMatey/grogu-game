@@ -12,13 +12,18 @@
   border-top: 10px solid black;
   border-bottom: 5px solid black;
   object-position: botom;
-  margin-right: 10%;
+  /* margin-right: 20%; */
+}
+
+.navbar-logo:hover {
+  -webkit-box-shadow: 1px 2px 15px 2px #FFFFFF; 
+  box-shadow: 1px 2px 15px 2px #FFFFFF;
 }
 
 .navbar-list {
   display: flex;
-  width: 50%;
-  justify-content: space-around;
+  width: 60%;
+  justify-content: space-between;
   list-style: none;
   /* border: 1px solid green; */
 }

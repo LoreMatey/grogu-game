@@ -1,8 +1,15 @@
-import React from 'react';
+import Cookies from "../components/cookies/Cookies";
+import Dice from '../components/dice/Dice'
+import Eggs from "../components/cookies/Eggs";
 
 const Game = () => {
   return (
-    <h1>Game</h1>
+    <>
+      <h1>Game!</h1>
+      <Cookies />
+      <Eggs />
+      <Dice />
+    </>
   )
 }
 

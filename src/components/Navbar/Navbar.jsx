@@ -10,10 +10,10 @@ const Navbar = () => {
   return (
     <>
       <div className='navbar'>
-        <NavLink to='/'>
-          <img className='navbar-logo' src='https://www.creativefabrica.com/wp-content/uploads/2021/08/20/bayoda-grogu-svg-Graphics-16076611-1-1-580x435.jpg' />
-        </NavLink>
         <ul className='navbar-list'>
+          <NavLink to='/'>
+            <img className='navbar-logo' src='https://www.creativefabrica.com/wp-content/uploads/2021/08/20/bayoda-grogu-svg-Graphics-16076611-1-1-580x435.jpg' />
+          </NavLink>
           <li className='navbar-item'>
             <NavLink to='/rules'>
               {navItem1}

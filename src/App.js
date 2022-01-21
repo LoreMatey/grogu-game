@@ -1,6 +1,6 @@
 import Game from './pages/Game';
 import Home from './pages/Home';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Pieces from './pages/Pieces';
 import Rules from './pages/Rules';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
