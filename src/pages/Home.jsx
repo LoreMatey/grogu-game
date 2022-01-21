@@ -1,12 +1,12 @@
 import React from 'react';
 import './Home.css'
-import HomeData from './HomeData';
+import HomeInfo from '../components/homeInfo/HomeInfo';
 
 const Home = () => {
 
   return (
     <div className='homepage-wrapper'>
-      <HomeData />
+      <HomeInfo />
     </div>
     
   )

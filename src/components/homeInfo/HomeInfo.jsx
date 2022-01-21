@@ -1,4 +1,4 @@
-import './HomeData.css';
+import './HomeInfo.css';
 const HomeData = () => {
   return (
     <div className="homepage-info--wrapper">
