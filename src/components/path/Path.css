@@ -1,0 +1,8 @@
+.path {
+  display: flex;
+  width: 200px;
+  border: 1px solid red;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 20px;
+}
