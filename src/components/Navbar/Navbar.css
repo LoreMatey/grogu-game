@@ -15,9 +15,12 @@
   /* margin-right: 20%; */
 }
 
-.navbar-logo:hover {
+.navbar-logo:hover,
+.navbar-logo:focus,
+.navbar-logo:active {
   -webkit-box-shadow: 1px 2px 15px 2px #FFFFFF; 
   box-shadow: 1px 2px 15px 2px #FFFFFF;
+  outline: none;
 }
 
 .navbar-list {
@@ -42,9 +45,12 @@
   color: white;
 }
 
-.navbar-link:hover {
+.navbar-link:hover,
+.navbar-link:focus,
+.navbar-link:active {
   -webkit-box-shadow: 1px 2px 15px 2px #FFFFFF; 
   box-shadow: 1px 2px 15px 2px #FFFFFF;
+  outline: none;
 }
 
 .navbar-icon {

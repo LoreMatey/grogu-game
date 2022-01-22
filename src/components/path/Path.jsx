@@ -36,7 +36,7 @@ const Path2 = () => {
 
 
   return (
-    <>
+    <div className='path-wrapper'>
       <h2>El camino hacia el armario</h2>
       <ul className='path'>
         {
@@ -52,7 +52,7 @@ const Path2 = () => {
         Avanza una casilla
       </button>
         
-    </>
+    </div>
   )
 }
 

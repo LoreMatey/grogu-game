@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { generate as id } from 'shortid';
+import randomNum from '../dice/Dice';
 
 
 const Cookies = () => {
@@ -15,8 +16,8 @@ const Cookies = () => {
       } else {
         alert('Ya te has llevado todas las galletas')
       }
-      
   }
+  
   return(
     <>
       <h1>My array of cookies</h1>
