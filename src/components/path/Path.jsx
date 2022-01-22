@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import './Path.css';
+import groguImg from '../../images/grogu.jpg'
+
+const groguImage = groguImg;
+const grogu = <img className='grogu' width='40px' src={groguImage} />
 
 const Path2 = () => {
-  const [path, setPath] = useState(['🟢', '', '', '', '', '', '', '🟫']);
+  const [path, setPath] = useState([grogu, '', '', '', '', '', '', '🟫']);
 
 
   const nextBox = () => {
