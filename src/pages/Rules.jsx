@@ -1,8 +1,13 @@
 import React from 'react';
+import RulesInfo from '../components/rules/RulesInfo';
+import './Rules.css';
 
 const Rules = () => {
   return (
-    <h1>Rules</h1>
+    <div className='rulespage-wrapper'>
+      <RulesInfo />
+    </div>
+    
   )
 }
 

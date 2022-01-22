@@ -7,14 +7,16 @@ const Eggs = () => {
   const subItem = () => {
     console.log(eggs.length)
     // console.log(eggs)
+      if(eggs.length > 0) {
         const indexEgg = eggs.lastIndexOf('🥚');
         const newEggs = eggs.splice(indexEgg, 1);
-        setEggs(newEggs);
-        console.log(eggs.length);
-        return [newEggs]
-      
-      
+        setEggs([...eggs], newEggs);
+        console.log(eggs.length); 
+      } else {
+        alert('Ye te has llevado todos los huevos')
+      }
   }
+
   return(
     <>
       <h1>My array of eggs</h1>

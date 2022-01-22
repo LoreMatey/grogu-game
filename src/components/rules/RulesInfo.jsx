@@ -1,8 +1,8 @@
 import '../Info.css';
-const HomeData = () => {
+const RulesInfo = () => {
   return (
     <div className='info--wrapper'>
-      <h1>¡Cuidado con Grogu!</h1>
+      <h1>Reglas del juego</h1>
         <p>
           El cazarrecompensas mandaloriano Din Djarin, conocido como «el Mandaloriano» o simplemente «mando», está a cargo de Grogu mientras viaja por la galaxia realizando todo tipo de encargos. 
         </p>
@@ -19,4 +19,4 @@ const HomeData = () => {
   )
 }
 
-export default HomeData;
+export default RulesInfo;

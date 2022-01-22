@@ -1,47 +1,6 @@
 import React, { useState } from 'react';
 import { generate as id } from 'shortid';
-// const Cookies = () => {
-//   const cookies = ['1', '2', '3'];
- 
-//   return (
-//     <>
-//       <ul>
-//         {
-//           cookies.map((cookie, index) => {
-//           return <li key={index}>{cookie}</li>
-//           }).splice(3, 3)
-//         }
-//       </ul>
-//     </>
-    
-//   )
-  
-// }
 
-// const Cookies = () => {
-//   const [cookies, setCookies] = useState(['🍪', '🍪', '🍪'])
-
-//   const addItem = () => {
-//     setCookies([...cookies, {
-//       // id: cookies.length,
-//       value: '🍪'
-//     }])
-//   }
-//   return(
-//     <>
-//       <h1>My array of cookies</h1>
-//       <button onClick={addItem}>Añade una cookie</button>
-
-//       <ul>
-//         {
-//           cookies.map((cookie, index) => (
-//             <li key={index}>{cookie.value}</li>
-//           ))
-//         }
-//       </ul>
-//     </>
-//   )
-// }
 
 const Cookies = () => {
   const [cookies, setCookies] = useState(['🍪', '🍪', '🍪'])
@@ -49,9 +8,12 @@ const Cookies = () => {
   const subItem = () => {
     console.log(cookies.length)
       if(cookies.length > 0) {
-        const newCookies = setCookies([cookies.pop()]);
-        setCookies([...cookies, newCookies]);
+        const indexCookies = cookies.lastIndexOf('🍪');
+        const newCookies = cookies.splice(indexCookies, 1);
+        setCookies([...cookies], newCookies);
         console.log(cookies.length);
+      } else {
+        alert('Ya te has llevado todas las galletas')
       }
       
   }
