@@ -1,42 +1,33 @@
 import React, { useState } from 'react';
 import './Path.css';
 
-const Path = () => {
-  const [path, setPath] = useState({
-    objects: [
-      { id: 'grogu',
-        value: '🟢'
-      },
-      { id: 'tile1',
-        value: '🟨'
-      },
-      { id: 'tile2',
-        value: '🟨'
-      },
-      { id: 'tile3',
-        value: '🟨'
-      },
-      { id: 'tile4',
-        value: '🟨'
-      },
-      { id: 'tile5',
-        value: '🟨'
-      },
-      { id: 'tile6',
-        value: '🟨'
-      },
-      { id: 'closet',
-        value: '🟫'
-      }
-    ]
-  });
+const Path2 = () => {
+  const [path, setPath] = useState(['🟢', '', '', '', '', '', '', '🟫']);
 
-  const prevBox = () => {
-    console.log('Retrocede')
-  }
 
   const nextBox = () => {
-    console.log('Avanza')
+    if(path.length === 1) {
+      alert('¡Oh, no! Grogu ha llegado antes que tú')
+    } else {
+      const lastIndexOfTile = path.lastIndexOf('')
+      const newPath = path.splice(lastIndexOfTile, 1);
+      setPath([...path], newPath);
+      console.log('Avanza')
+      console.log(path.length)
+    }
+    
+    
+  }
+
+  const prevBox = () => {
+    if(path.length < 8) {
+      const indexOfGrogu = path.lastIndexOf('🟢')
+      const newPathBack = path.splice(1, indexOfGrogu,'');
+      setPath([...path], newPathBack);
+      console.log('Retrocede')
+      console.log(path.length)
+    }
+    
   }
 
 
@@ -45,8 +36,8 @@ const Path = () => {
       <h2>El camino hacia el armario</h2>
       <ul className='path'>
         {
-          path.objects.map((object, index) => (
-            <li key={object.id}>{object.value}</li>
+          path.map((object, index) => (
+            <li key={index}>{object}</li>
           ))
         }
       </ul>
@@ -54,11 +45,11 @@ const Path = () => {
         Retrocede una casilla
       </button>
       <button onClick={nextBox}>
-        Azanza una casilla
+        Avanza una casilla
       </button>
         
     </>
   )
 }
 
-export default Path;
+export default Path2;

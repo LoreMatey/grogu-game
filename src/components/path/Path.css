@@ -1,8 +1,17 @@
 .path {
   display: flex;
-  width: 200px;
+  width: 400px;
+  /* width: fit-content; */
   border: 1px solid red;
   list-style: none;
-  justify-content: space-between;
+  justify-content: right;
+  
   margin-top: 20px;
+}
+
+.path li{
+  width: 40px;
+  height: 40px;
+  border: 1px solid green;
+  justify-content: right;
 }
