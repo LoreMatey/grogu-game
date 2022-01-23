@@ -1,9 +1,6 @@
 import './PiecesInfo.css';
 import { generate as id } from 'shortid';
-import {
-  pieces,
-  pieces2
-} from './PiecesData';
+import { pieces } from './PiecesData';
 
 
 const PiecesInfo = () => {
@@ -11,6 +8,7 @@ const PiecesInfo = () => {
   return (
     <>
       <div className="pieces-info--wrapper">
+        <h2>Fichas del juego</h2>
         <div className='pieces-layout'>
       {
         pieces.map((piece) => (
@@ -24,27 +22,6 @@ const PiecesInfo = () => {
             </p>
             <p className='piece-title'>
               {piece.title}
-            </p>
-          </div> 
-        ))
-      }
-        </div>
-      </div>
-
-      <div className="pieces-info--wrapper2">
-        <div className='pieces-layout'>
-      {
-        pieces2.map((piece2) => (
-          <div key={id()}
-               className="piece-container">
-            <img className='piece-img' 
-                 src={piece2.image}
-            />
-            <p className="piece-amount">
-              {piece2.amount}
-            </p>
-            <p className='piece-title'>
-              {piece2.title}
             </p>
           </div> 
         ))

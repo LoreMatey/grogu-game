@@ -1,29 +1,24 @@
 .pieces-info--wrapper {
-  width: 600px;
+  width: 750px;
   height: fit-content;
-  margin-left: 5%;
   margin-top: 3%;
-  background-image: url('https://image.freepik.com/foto-gratis/textura-papel-arrugado-blanco-fondo_1373-162.jpg');
 }
 
-.pieces-info--wrapper2 {
-  width: 600px;
-  height: fit-content;
-  margin-left: 5%;
-  margin-top: 3%;
+.pieces-info--wrapper h2 {
+  padding-left: calc(40px + 25px + (10px * 2));
 }
 
 .pieces-layout {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 30% 30% 30%;
   grid-gap: 10px;
   margin: 25px auto;
-  padding-left: 16%;
+  padding: 0 40px 0 80px;
   text-align: center;
 }
 
 .piece-container {
-  height: 240px;  
+  height: 230px;  
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.63); 

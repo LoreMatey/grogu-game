@@ -28,10 +28,7 @@ const pieces = [
     image: 'https://www.caracteristicas.co/wp-content/uploads/2017/03/huevos-de-rana-e1563831776729.jpg',
     amount: 'x3',
     title: 'Huevos de rana (🥚)'
-  }
-]
-
-const pieces2 = [
+  },
   {
     image: 'https://images.nexusapp.co/assets/74/2c/be/251752258.jpg',
     amount: 'x1',
@@ -45,6 +42,5 @@ const pieces2 = [
 ]
 
 export {
-  pieces,
-  pieces2
+  pieces
 }
