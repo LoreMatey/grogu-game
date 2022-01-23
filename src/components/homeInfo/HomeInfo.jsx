@@ -1,4 +1,6 @@
 import '../Info.css';
+import './HomeInfo.css';
+
 const HomeData = () => {
   return (
     <div className='info--wrapper'>

@@ -1,8 +1,11 @@
 import React from 'react';
+import './Pieces.css'
 
 const Pieces = () => {
   return (
-    <h1>Pieces</h1>
+    <section className='piecesPage-wrapper'>
+      <h1>Pieces</h1>
+    </section>
   )
 }
 
