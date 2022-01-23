@@ -42,30 +42,34 @@ const RulesInfo = () => {
           </li>
       </ul>
       <table className='info-rules--table'>
-        <tr>
-          <th>N.º en el dado</th>
-          <th>Acción</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Descargas una caja de galletas azules 🍪</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Descargas un huevo de rana 🥚</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Descargas una rana 🐸</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Grogu avanza una casilla ➡️</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Grogu retrocede una casilla ⬅️</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>N.º en el dado</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Descargas una caja de galletas azules 🍪</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Descargas un huevo de rana 🥚</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Descargas una rana 🐸</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Grogu avanza una casilla ➡️</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Grogu retrocede una casilla ⬅️</td>
+          </tr>
+          </tbody>
       </table>
     </div>
   )

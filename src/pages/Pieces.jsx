@@ -1,10 +1,11 @@
 import React from 'react';
+import PiecesInfo from '../components/pieces/PiecesInfo';
 import './Pieces.css'
 
 const Pieces = () => {
   return (
     <section className='piecesPage-wrapper'>
-      <h1>Pieces</h1>
+      <PiecesInfo />
     </section>
   )
 }

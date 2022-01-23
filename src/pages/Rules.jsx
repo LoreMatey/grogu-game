@@ -4,9 +4,9 @@ import './Rules.css';
 
 const Rules = () => {
   return (
-    <div className='rulespage-wrapper'>
+    <section className='rulespage-wrapper'>
       <RulesInfo />
-    </div>
+    </section>
     
   )
 }
