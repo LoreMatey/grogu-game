@@ -1,0 +1,20 @@
+
+.diceComponent-wrapper {
+  border: 1px solid green;
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.dice-wrapper {
+  display: flex;
+}
+
+.dice-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(210, 78, 78);
+  color: white;
+}

@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { generate as id } from 'shortid';
-import randomNum from '../dice/Dice';
 
 
-const Cookies = () => {
-  const [cookies, setCookies] = useState(['🍪', '🍪', '🍪'])
+const Cookies = ({randomNum}) => {
+  const [cookies, setCookies] = useState(['🍪', '🍪', '🍪']);
+
+  // const usarSubItem = (cookies) => {
+  //   if(randomNum === 1) {
+  //     subItem(cookies)
+  //   }
+  // }
+
 
   const subItem = () => {
     console.log(cookies.length)
@@ -13,8 +19,10 @@ const Cookies = () => {
         const newCookies = cookies.splice(indexCookies, 1);
         setCookies([...cookies], newCookies);
         console.log(cookies.length);
+        console.log({randomNum})
+        
       } else {
-        alert('Ya te has llevado todas las galletas')
+        console.log('Ya te has llevado todas las galletas')
       }
   }
   

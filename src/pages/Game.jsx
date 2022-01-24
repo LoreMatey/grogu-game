@@ -1,20 +1,26 @@
-import Cookies from "../components/cookies/Cookies";
+import './Game.css'
+import Cookies from "../components/closet/Cookies";
 import Dice from '../components/dice/Dice'
-import Eggs from "../components/cookies/Eggs";
 import Path from "../components/path/Path";
 import StartGame from "../components/pop-ups/start-game/StartGame";
 
 const Game = () => {
 
+  const prueba = ({name}) => {
+    console.log('Me ejecuto y estoy en Game')
+    console.log(name)
+  }
+
   return (
-    <>
-      <h1>Game!</h1>
-      <Cookies />
-      <Eggs />
+    <section className='game-wrapper'>
+      <div className='board-wrapper'>
+        <Path />
+      </div>
+      {/* <Cookies /> */}
       <Dice />
-      <Path />
-      <StartGame />
-    </>
+      
+      <StartGame prueba={prueba}/>
+    </section>
   )
 }
 

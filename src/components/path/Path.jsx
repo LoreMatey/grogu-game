@@ -1,39 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Path.css';
+import WinningGame from '../pop-ups/start-game/WinningGame';
 import groguImg from '../../images/grogu.jpg'
 
-const groguImage = groguImg;
-const grogu = <img className='grogu' width='40px' src={groguImage} />
+const grogu = <img className='grogu' width='40px' src={groguImg} />
 
-const Path2 = () => {
+const Path = () => {
   const [path, setPath] = useState([grogu, '', '', '', '', '', '', '🟫']);
+
+  useEffect(() => {
+    if(path.length === 1){
+      console.log('Grogu se ha comido todo')
+    }
+  }, [path]);
 
 
   const nextBox = () => {
-    if(path.length === 1) {
-      alert('¡Oh, no! Grogu ha llegado antes que tú')
-    } else {
-      const lastIndexOfTile = path.lastIndexOf('')
+    const lastIndexOfTile = path.lastIndexOf('')
       const newPath = path.splice(lastIndexOfTile, 1);
-      setPath([...path], newPath);
-      console.log('Avanza')
-      console.log(path.length)
-    }
-    
-    
+      setPath([...path], newPath)
   }
 
   const prevBox = () => {
     if(path.length < 8) {
-      const indexOfGrogu = path.lastIndexOf('🟢')
+      const indexOfGrogu = path.lastIndexOf(grogu)
       const newPathBack = path.splice(1, indexOfGrogu,'');
       setPath([...path], newPathBack);
-      console.log('Retrocede')
-      console.log(path.length)
     }
     
   }
-
 
   return (
     <div className='path-wrapper'>
@@ -51,9 +46,10 @@ const Path2 = () => {
       <button onClick={nextBox}>
         Avanza una casilla
       </button>
+      <WinningGame showWin={path.length === 1}/>
         
     </div>
   )
 }
 
-export default Path2;
+export default Path;

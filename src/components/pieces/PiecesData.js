@@ -1,6 +1,6 @@
 const pieces = [
   {
-    image: 'https://azulejosneicone.com/wp-content/uploads/2021/08/Azulejo-1900-MARFIL-20x20-pieza.jpg',
+    image: 'http://ceramicabosch.com/704-large_default/baldosa-lisa.jpg',
     amount: 'x6',
     title: 'Ficha de zona de carga'
   },
