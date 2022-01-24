@@ -1,29 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Dice.css'
-import WinningGame from '../pop-ups/start-game/WinningGame'
 import Cookies from '../closet/Cookies';
 import Eggs from '../closet/Eggs';
 
-const Dice = ({subItem}) => {
+const Dice = ({getNumber}) => {
   const [randomNum, setRandomNum] = useState(0)
-
-  useEffect(() => {  
-    if(randomNum === 1){
-    }
-  }, [randomNum]);
 
   const getRandomNum = () => {
     const minNum = 1;
     const maxNum = 5;
-    setRandomNum(Math.floor(Math.random()*(maxNum-minNum+1)+minNum))
-    // if(randomNum === 1) {
-    //   usarSubItem()
-    //   console.log('Saca una galleta')
-    // }
-    if(randomNum === 1) {
-      console.log('Hey')
-      subItem()
-    }
+    const randomNumber = Math.floor(Math.random()*(maxNum-minNum+1)+minNum)
+    setRandomNum(randomNumber)
+    getNumber(randomNumber)
   }
 
   return (
@@ -34,11 +22,6 @@ const Dice = ({subItem}) => {
           <img width='100px' src='https://images.nexusapp.co/assets/74/2c/be/251752258.jpg' />
         </div>
         <button className='dice-btn' onClick={getRandomNum}>Lanza el dado</button>
-      
-      
-      {/* <Cookies diceNum={getRandomNum}/> */}
-      {/* <Cookies subItem={randomNum === 1} /> */}
-      {/* <WinningGame showWin={randomNum === 1}/> */}
     </div>
     <Cookies randomNum={randomNum}></Cookies>
     <Eggs />
