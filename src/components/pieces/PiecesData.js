@@ -1,3 +1,5 @@
+import boxImg from '../../images/white-box-margins.png';
+
 const pieces = [
   {
     image: 'http://ceramicabosch.com/704-large_default/baldosa-lisa.jpg',
@@ -10,7 +12,8 @@ const pieces = [
     title: 'Ficha de armario'
   },
   {
-    image: 'https://image.freepik.com/vector-gratis/caja-vacia-blanca-realista-3d_33099-1056.jpg',
+    // image: 'https://image.freepik.com/vector-gratis/caja-vacia-blanca-realista-3d_33099-1056.jpg',
+    image: boxImg,
     amount: 'x3',
     title: 'Ficha de recipiente'
   },

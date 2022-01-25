@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Dice.css'
-import Cookies from '../closet/Cookies';
-import Eggs from '../closet/Eggs';
 
 const Dice = ({getNumber}) => {
   const [randomNum, setRandomNum] = useState(0)
@@ -23,8 +21,6 @@ const Dice = ({getNumber}) => {
         </div>
         <button className='dice-btn' onClick={getRandomNum}>Lanza el dado</button>
     </div>
-    <Cookies randomNum={randomNum}></Cookies>
-    <Eggs />
     </>
     
   )

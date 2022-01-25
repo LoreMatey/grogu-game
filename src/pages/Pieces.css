@@ -2,9 +2,11 @@
   height: 100vh;
   /* min-width: 400px; */
   display: flex;
+  padding-top: 100px;
   /* flex-direction: column; */
   justify-content: space-between;
-  background-image: url('https://as01.epimg.net/meristation/imagenes/2021/08/30/noticias/1630320867_305165_1630321049_portada_normal.jpg');
+  background-image: url('https://conocedores.com/wp-content/uploads/2021/12/the-mandalorian-temporada-3-24122021in1.jpg');
   background-color: rgb(16, 14, 21);
-  background-size: cover;
+  background-size:cover;
+  background-position: 0 90px;
 }

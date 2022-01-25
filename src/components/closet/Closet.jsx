@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { generate as id } from 'shortid';
+import React, { useState } from 'react'
+import { generate as id } from 'shortid'
+import './Closet.css';
 
 const defaultCloset = {
   cookies: [],
@@ -9,35 +10,34 @@ const defaultCloset = {
 
 const Closet = ({closet = defaultCloset}) => {
   
-  const {cookies, eggs, froggs} = closet
+  const {cookies, eggs, frogs} = closet
 
   return(
-    <>
-      <h1>My array of cookies</h1>
-
-      <ul>
+    <div className='closet-wrapper'>
+  
+      <ul className='closet-items--wrapper'>
         {
           cookies.map((cookie, index) => (
             <li key={id()}>{cookie}</li>
           ))
         }
       </ul>
-      <ul>
+      <ul className='closet-items--wrapper'>
         {
           eggs.map((egg, index) => (
             <li key={id()}>{egg}</li>
           ))
         }
       </ul>
-      <ul>
+      <ul className='closet-items--wrapper'>
         {
-          froggs.map((frogg, index) => (
-            <li key={id()}>{frogg}</li>
+          frogs.map((frog, index) => (
+            <li key={id()}>{frog}</li>
           ))
         }
       </ul>
-    </>
+    </div>
   )
 }
 
-export default Closet;
+export default Closet

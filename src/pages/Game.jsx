@@ -1,6 +1,5 @@
 import './Game.css'
 import { useState, useEffect } from 'react';
-import Cookies from "../components/closet/Cookies";
 import Dice from '../components/dice/Dice'
 import Path from "../components/path/Path";
 import StartGame from "../components/pop-ups/start-game/StartGame";
@@ -11,7 +10,7 @@ const Game = () => {
   const defaultCloset = {
     cookies: ['🍪', '🍪', '🍪'],
     eggs: ['🥚', '🥚', '🥚'],
-    froggs: ['🐸', '🐸', '🐸']
+    frogs: ['🐸', '🐸', '🐸']
   }
   const [closet, setCloset] = useState(defaultCloset);
   const [youWin, setYouWin] = useState(false); 
@@ -39,7 +38,7 @@ const Game = () => {
         break;
 
       case 3:
-        removeItem('froggs')
+        removeItem('frogs')
         break;
 
       case 4:
@@ -66,7 +65,6 @@ const Game = () => {
     controller(number)
   }
 
-
   const removeItem = (item) => {
     const newState = {
       ...closet, 
@@ -78,7 +76,7 @@ const Game = () => {
 
   return (
     <section className='game-wrapper'>
-      <Closet closet={closet}></Closet>
+      <Dice getNumber={getNumber}/>
       <div className='board-wrapper'>
         {
           youWin && <h2>You win!!!</h2>
@@ -86,11 +84,9 @@ const Game = () => {
         {
           !youWin && <Path position={groguPosition}/>
         }
+        <Closet closet={closet}></Closet>
       </div>
-      {/* <Cookies /> */}
-      <Dice getNumber={getNumber}/>
-      
-      <StartGame prueba/>
+      <StartGame />
       
     </section>
   )

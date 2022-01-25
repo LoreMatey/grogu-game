@@ -2,10 +2,12 @@
   width: 750px;
   height: fit-content;
   margin-top: 3%;
+  margin-left: 95px;
 }
 
 .pieces-info--wrapper h2 {
   padding-left: calc(40px + 25px + (10px * 2));
+  color: rgb(194, 239, 249);
 }
 
 .pieces-layout {

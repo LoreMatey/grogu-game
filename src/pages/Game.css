@@ -1,4 +1,11 @@
 
-/* .game-wrapper {
+.game-wrapper {
+  padding-top: 150px;
   display: flex;
-} */
+  flex-direction: column;
+} 
+
+.board-wrapper {
+  border: 1px solid rgb(240, 42, 197);
+  display: flex;
+}

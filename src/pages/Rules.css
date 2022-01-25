@@ -1,9 +1,11 @@
 .rulespage-wrapper {
   height: 100vh;
+  padding-top: 100px;
   /* min-width: 400px; */
   display: flex;
   flex-direction: column;
   background-image: url('https://wallpaperaccess.com/full/3138672.jpg');
   background-color: rgb(16, 14, 21);
   background-size: cover;
+  background-position: 25% 90px;
 }
