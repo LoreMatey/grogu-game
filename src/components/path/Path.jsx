@@ -1,12 +1,13 @@
 import './Path.css';
-import LosingGame from '../pop-ups/start-game/LosingGame';
+import LosingGame from '../pop-ups/LosingGame';
 import groguImg from '../../images/grogu.jpg'
 
-const grogu = <img className='grogu' width='40px' src={groguImg} />
+const grogu = <img className='grogu' src={groguImg} />
+const closetImg = <img className='closet-img' src='https://image.freepik.com/vector-gratis/armario-cajon-diseno-interiores_1308-76277.jpg'/>
 
 const Path = ({position}) => {
   
-  const board = ['', '', '', '', '', '', '', '🟫']
+  const board = ['', '', '', '', '', '', '', closetImg]
   const boardWithGrogu = [
     ...board.slice(0, position),
     grogu, 
@@ -15,7 +16,6 @@ const Path = ({position}) => {
 
   return (
     <div className='path-wrapper'>
-      <h2>El camino hacia el armario</h2>
       <ul className='path'>
         {
           boardWithGrogu.map((object, index) => (

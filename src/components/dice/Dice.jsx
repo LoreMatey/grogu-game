@@ -16,8 +16,8 @@ const Dice = ({getNumber}) => {
     <>
       <div className='diceComponent-wrapper'>
         <div className='dice-wrapper'>
-          <h1>{randomNum}</h1>
-          <img width='100px' src='https://images.nexusapp.co/assets/74/2c/be/251752258.jpg' />
+          <p style={{fontSize:'36px'}}>{randomNum}</p>
+          <img className='dice' src='https://images.nexusapp.co/assets/74/2c/be/251752258.jpg' />
         </div>
         <button className='dice-btn' onClick={getRandomNum}>Lanza el dado</button>
     </div>

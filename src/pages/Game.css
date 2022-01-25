@@ -1,11 +1,18 @@
 
 .game-wrapper {
-  padding-top: 150px;
+  padding-top: 120px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url('https://image.freepik.com/foto-gratis/cielo-estrellado_1048-11828.jpg');
+  background-color: rgb(3, 1, 26);
 } 
 
 .board-wrapper {
-  border: 1px solid rgb(240, 42, 197);
+  border: 2px solid rgb(52, 62, 80);
+  background-color: rgba(128, 128, 128, 0.153);
   display: flex;
+  margin: 0 auto;
+  padding: 40px;
+  align-items: center;
 }

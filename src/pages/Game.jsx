@@ -4,6 +4,7 @@ import Dice from '../components/dice/Dice'
 import Path from "../components/path/Path";
 import StartGame from "../components/pop-ups/start-game/StartGame";
 import Closet from '../components/closet/Closet';
+import WinningGame from '../components/pop-ups/WinningGame';
 
 const Game = () => {
 
@@ -79,7 +80,7 @@ const Game = () => {
       <Dice getNumber={getNumber}/>
       <div className='board-wrapper'>
         {
-          youWin && <h2>You win!!!</h2>
+          youWin && <WinningGame />
         }
         {
           !youWin && <Path position={groguPosition}/>

@@ -18,21 +18,21 @@ const Closet = ({closet = defaultCloset}) => {
       <ul className='closet-items--wrapper'>
         {
           cookies.map((cookie, index) => (
-            <li key={id()}>{cookie}</li>
+            <li className='closet-items' key={id()}>{cookie}</li>
           ))
         }
       </ul>
       <ul className='closet-items--wrapper'>
         {
           eggs.map((egg, index) => (
-            <li key={id()}>{egg}</li>
+            <li className='closet-items' key={id()}>{egg}</li>
           ))
         }
       </ul>
       <ul className='closet-items--wrapper'>
         {
           frogs.map((frog, index) => (
-            <li key={id()}>{frog}</li>
+            <li className='closet-items' key={id()}>{frog}</li>
           ))
         }
       </ul>
