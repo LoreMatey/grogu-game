@@ -5,7 +5,7 @@ import './Closet.css';
 const defaultCloset = {
   cookies: [],
   eggs: [],
-  froggs: []
+  frogs: []
 }
 
 const Closet = ({closet = defaultCloset}) => {
@@ -14,7 +14,6 @@ const Closet = ({closet = defaultCloset}) => {
 
   return(
     <div className='closet-wrapper'>
-  
       <ul className='closet-items--wrapper'>
         {
           cookies.map((cookie, index) => (

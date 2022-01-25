@@ -9,10 +9,10 @@
 } 
 
 .board-wrapper {
+  margin: 0 auto;
+  padding: 40px;
   border: 2px solid rgb(52, 62, 80);
   background-color: rgba(128, 128, 128, 0.153);
   display: flex;
-  margin: 0 auto;
-  padding: 40px;
   align-items: center;
 }

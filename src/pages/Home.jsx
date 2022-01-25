@@ -5,9 +5,9 @@ import HomeInfo from '../components/homeInfo/HomeInfo';
 const Home = () => {
 
   return (
-    <div className='homepage-wrapper'>
+    <main className='homepage-wrapper'>
       <HomeInfo />
-    </div>
+    </main>
     
   )
 }

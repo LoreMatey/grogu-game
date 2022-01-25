@@ -1,9 +1,10 @@
-import './Path.css';
+import { generate as id } from 'shortid';
 import LosingGame from '../pop-ups/LosingGame';
-import groguImg from '../../images/grogu.jpg'
+import groguImg from '../../images/grogu.jpg';
+import './Path.css';
 
-const grogu = <img className='grogu' src={groguImg} />
-const closetImg = <img className='closet-img' src='https://image.freepik.com/vector-gratis/armario-cajon-diseno-interiores_1308-76277.jpg'/>
+const grogu = <img alt='ficha de Grogu' className='grogu' src={groguImg} />
+const closetImg = <img alt='ficha de armario' className='closet-img' src='https://image.freepik.com/vector-gratis/armario-cajon-diseno-interiores_1308-76277.jpg'/>
 
 const Path = ({position}) => {
   
@@ -19,7 +20,7 @@ const Path = ({position}) => {
       <ul className='path'>
         {
           boardWithGrogu.map((object, index) => (
-            <li key={index}>{object}</li>
+            <li key={id()}>{object}</li>
           ))
         }
       </ul>

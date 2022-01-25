@@ -1,10 +1,10 @@
-import './Game.css'
 import { useState, useEffect } from 'react';
 import Dice from '../components/dice/Dice'
 import Path from "../components/path/Path";
 import StartGame from "../components/pop-ups/start-game/StartGame";
 import Closet from '../components/closet/Closet';
 import WinningGame from '../components/pop-ups/WinningGame';
+import './Game.css'
 
 const Game = () => {
 
@@ -71,7 +71,6 @@ const Game = () => {
       ...closet, 
       [item]: closet[item].slice(0, closet[item].length - 1)
     }
-    console.log({newState})
     setCloset(newState)
   }
 

@@ -10,11 +10,10 @@ const Navbar = () => {
   const navItem3 = 'Juego';
 
   return (
-    <>
-      <div className='navbar'>
+      <nav className='navbar'>
         <ul className='navbar-list'>
           <NavLink to='/'>
-            <img className='navbar-logo' src='https://www.creativefabrica.com/wp-content/uploads/2021/08/20/bayoda-grogu-svg-Graphics-16076611-1-1-580x435.jpg' />
+            <img alt="Logo de Grogu" className='navbar-logo' src='https://www.creativefabrica.com/wp-content/uploads/2021/08/20/bayoda-grogu-svg-Graphics-16076611-1-1-580x435.jpg' />
           </NavLink>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to='/rules'>
@@ -28,15 +27,14 @@ const Navbar = () => {
               {navItem2}
             </NavLink>
           </li>
-          <li className='navbar-item'>
+          <li className='navbar-item link-toGame'>
             <NavLink className='navbar-link' to='/game'>
               <FaDiceFive className='navbar-icon dice'/>
               {navItem3}
             </NavLink>
           </li>
         </ul>
-      </div>
-    </>
+      </nav>
   );
 }
 
