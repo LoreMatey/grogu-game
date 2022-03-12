@@ -1,4 +1,5 @@
-![GroguGame](https://user-images.githubusercontent.com/75860941/158017800-ce08ae15-33ef-4b54-99e2-b85622d20675.gif)
+![GroguGame](https://user-images.githubusercontent.com/75860941/158018024-44204291-6a53-4185-9b0a-6412f5e75569.gif)
+
 
 
 # Getting Started with Create React App
