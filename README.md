@@ -1,8 +1,18 @@
 <img height="450" src="https://user-images.githubusercontent.com/75860941/158018024-44204291-6a53-4185-9b0a-6412f5e75569.gif" /> 
 
-# Getting Started with Create React App
+# Grogu Game
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This **React SPA** consists of a game based on the 'The Mandalorian' series. The aim of the game is taking all the goods (cookies, eggs and frogs) out of the closet before Grogu arrives. 
+- Each number of the dice (1-5) triggers a different action: 
+  - Number 1: you take a box of cookies out.
+  - Number 2: you take an egg out.
+  - Number 3: you take a frog out.
+  - Number 4: Grogu moves one tile forward.
+  - Number 5: Grogu moves one tile backward. 
+- The SPA has other sections (home, pieces and rules).
+- React **useEffect and useState Hooks** are used in this project, to track the state in certain components.
+
 
 ## Available Scripts
 
