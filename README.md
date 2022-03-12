@@ -1,3 +1,6 @@
+![GroguGame](https://user-images.githubusercontent.com/75860941/158017800-ce08ae15-33ef-4b54-99e2-b85622d20675.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
